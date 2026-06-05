@@ -2,6 +2,24 @@
 
 A web application for managing employee equipment orders.
 
+## 🚀 Live Demo
+
+https://equipment-store.vercel.app
+
+## 📸 Application Preview
+
+### Orders List
+
+![Orders List](./screenshots/equipment-store_Orders.jpg)
+
+### Order Details
+
+![Order Details](./screenshots/equipment-store_OrderDetail.jpg)
+
+### Admin Panel
+
+![Admin Panel](./screenshots/equipment-store_AdminPanel.jpg)
+
 ## Features
 
 * Create equipment orders
@@ -120,8 +138,9 @@ This allows reviewers to immediately explore all application features without ma
 
 ```bash
 npx prisma db seed
+```
 
-### 👤 Author
+## 👨‍💻 Author
 
 Roksana Tenczyńska
 
