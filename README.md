@@ -121,8 +121,7 @@ This allows reviewers to immediately explore all application features without ma
 ```bash
 npx prisma db seed
 
-
-## Author
+### 👤 Author
 
 Roksana Tenczyńska
 
