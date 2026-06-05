@@ -1,0 +1,57 @@
+export const en = {
+  orders: "Orders",
+  order: "Order",
+  newOrder: "New order",
+  save: "Save",
+  edit: "Edit",
+  adminPanel: "Admin panel",
+  employeeName: "Employee name",
+  department: "Department",
+  justification: "Justification",
+  priority: "Priority",
+  details: "Details",
+  value: "Value",
+  products: "Products",
+  add: "Add",
+  remove: "Remove",
+  selected: "Selected",
+  back: "Back",
+  status: "Status",
+  approve: "Approve",
+  cancel: "Cancel",
+  backToDraft: "Back to draft",
+  editOrder: "Edit order",
+  saveChanges: "Save changes",
+  saving: "Saving...",
+  equipment: "Equipment",
+  unexpectedError: "Unexpected error",
+  employee: "Employee",
+  items: "Items",
+  orderNotFound: "Order not found",
+  total: "Total",
+  system: "Orders System",
+  admin: "Admin",
+
+  statusList: {
+    DRAFT: "Draft",
+    APPROVED: "Approved",
+    CANCELLED: "Cancelled",
+  },
+
+  priorityList: {
+    LOW: "Low",
+    MEDIUM: "Medium",
+    HIGH: "High",
+  },
+
+  errorList: {
+    ERROR_EMPTY_LIST: "The order must contain at least 1 product",
+    ERROR_SAME_ITEM: "You cannot add the same product multiple times",
+    ERROR_ITEM_QUANTITY: "Each product must have a quantity of 1-20",
+    ERROR_LIST_QUANTITY: "The total number of products cannot exceed 20",
+    ERROR_ORDER_AMOUNT: "The order can exceed PLN 5,000 only for High priority",
+    ERROR_ORDER_NOT_FOUND: "Order not found",
+    ERROR_ORDER_NOT_EDIT: "Order cannot be edited",
+    ERROR_EDIT_DRAFT_ONLY:"Only DRAFT orders can be edited"
+  }
+};

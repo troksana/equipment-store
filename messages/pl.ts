@@ -1,0 +1,57 @@
+export const pl = {
+  orders: "Zamówienia",
+  order: "Zamówienie",
+  newOrder: "Nowe zamówienie",
+  save: "Zapisz",
+  edit: "Edytuj",
+  adminPanel: "Panel administratora",
+  employeeName: "Imię pracownika",
+  department: "Dział",
+  justification: "Uzasadnienie",
+  priority: "Priorytet",
+  details: "Szczegóły",
+  value: "Wartość",
+  products: "Produkty",
+  add: "Dodaj",
+  remove: "Usuń",
+  selected: "Wybrane",
+  back: "Powrót",
+  status: "Status",
+  approve: "Zatwierdź",
+  cancel: "Anuluj",
+  backToDraft: "Cofnij do szkicu",
+  editOrder: "Edytuj zamówienie",
+  saveChanges: "Zapisz zmiany",
+  saving: "Zapisywanie...",
+  equipment: "Sprzęt",
+  unexpectedError: "Wystąpił nieoczekiwany błąd",
+  employee: "Pracownik",
+  items: "Pozycje",
+  orderNotFound: "Nie znaleziono zamówienia",
+  total: "Suma",
+  system: "System zamówień",
+  admin: "Panel administratora",
+
+  statusList: {
+    DRAFT: "Szkic",
+    APPROVED: "Zatwierdzone",
+    CANCELLED: "Anulowane",
+  },
+
+  priorityList: {
+    LOW: "Niski",
+    MEDIUM: "Średni",
+    HIGH: "Wysoki",
+  },
+
+  errorList: {
+    ERROR_EMPTY_LIST: "Zamówienie musi zawierać przynajmniej 1 produkt",
+    ERROR_SAME_ITEM: "Nie można dodać tego samego produktu kilka razy",
+    ERROR_ITEM_QUANTITY: "Każdy produkt musi mieć ilość 1–20",
+    ERROR_LIST_QUANTITY: "Łączna ilość produktów nie może przekraczać 20",
+    ERROR_ORDER_AMOUNT: "Zamówienie może przekroczyć 5000 PLN tylko dla priorytetu Wysoki",
+    ERROR_ORDER_NOT_FOUND: "Nie odnaleziono zamówienia",
+    ERROR_ORDER_NOT_EDIT: "Zamówienie niz może być edytowane",
+    ERROR_EDIT_DRAFT_ONLY:"Tylko zamówienia w statusie Szkic mogą być edytowane"
+  }
+};

@@ -1,0 +1,60 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Priority {
+  LOW
+  MEDIUM
+  HIGH
+}
+
+enum Status {
+  DRAFT
+  APPROVED
+  CANCELLED
+}
+
+model Equipment {
+  id    String @id @default(cuid())
+  name  String
+  price Float
+
+  orderItems OrderItem[]
+}
+
+model Order {
+  id            String @id @default(cuid())
+  employeeName  String
+  department    String
+  justification String
+
+  priority Priority
+  status   Status @default(DRAFT)
+
+  createdAt DateTime @default(now())
+
+  items OrderItem[]
+}
+
+model OrderItem {
+  id          String @id @default(cuid())
+
+  quantity    Int
+  unitPrice   Float
+
+  orderId     String
+  equipmentId String
+
+  order       Order     @relation(fields: [orderId], references: [id])
+  equipment   Equipment @relation(fields: [equipmentId], references: [id])
+}
